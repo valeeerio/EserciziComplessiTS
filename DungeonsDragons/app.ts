@@ -1,13 +1,26 @@
+function statistiche() {
+  const array: number[] = [
+    Math.floor(Math.random() * 6 + 1),
+    Math.floor(Math.random() * 6 + 1),
+    Math.floor(Math.random() * 6 + 1),
+    Math.floor(Math.random() * 6 + 1),
+  ];
+
+  let minimo: number = Math.min(...array);
+  const somma = array[0] + array[1] + array[2] + array[3] - minimo;
+  return somma;
+}
+
 class Personaggio {
   constructor(protected nome: string, protected id: number) {}
 
   valori() {
-    const forza = Math.floor(Math.random() * 14 + 5);
-    const destrezza = Math.floor(Math.random() * 14 + 5);
-    const costituzione = Math.floor(Math.random() * 14 + 5);
-    const intelligenza = Math.floor(Math.random() * 14 + 5);
-    const saggezza = Math.floor(Math.random() * 14 + 5);
-    const carisma = Math.floor(Math.random() * 14 + 5);
+    const forza = statistiche();
+    const destrezza = statistiche();
+    const costituzione = statistiche();
+    const intelligenza = statistiche();
+    const saggezza = statistiche();
+    const carisma = statistiche();
     const puntiFerita = Math.floor(10 + (costituzione - 10) / 2);
 
     console.log(
@@ -17,3 +30,5 @@ class Personaggio {
 }
 const personaggio1 = new Personaggio("Valerio", 1);
 personaggio1.valori();
+const personaggio2 = new Personaggio("pisellone", 2);
+personaggio2.valori();
