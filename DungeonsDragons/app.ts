@@ -30,5 +30,3 @@ class Personaggio {
 }
 const personaggio1 = new Personaggio("Valerio", 1);
 personaggio1.valori();
-const personaggio2 = new Personaggio("pisellone", 2);
-personaggio2.valori();

@@ -28,5 +28,3 @@ var Personaggio = /** @class */ (function () {
 }());
 var personaggio1 = new Personaggio("Valerio", 1);
 personaggio1.valori();
-var personaggio2 = new Personaggio("pisellone", 2);
-personaggio2.valori();
