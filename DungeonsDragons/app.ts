@@ -24,7 +24,8 @@ class Personaggio {
     const puntiFerita = Math.floor(10 + (costituzione - 10) / 2);
 
     console.log(
-      `Ciao sono ${this.nome} e sono il ${this.id} personaggio, e queste sono le mie caratteristiche: \nForza: ${forza} \nDestrezza: ${destrezza} \nCostituzione: ${costituzione} \nIntelligenza: ${intelligenza} \nSaggezza: ${saggezza} \nCarisma: ${carisma} \nI miei punti ferita sono ${puntiFerita}`
+      `Personaggio ${this.id}: ${this.nome} 
+      \nForza: ${forza} \nDestrezza: ${destrezza} \nCostituzione: ${costituzione} \nIntelligenza: ${intelligenza} \nSaggezza: ${saggezza} \nCarisma: ${carisma} \nPunti ferita: ${puntiFerita}`
     );
   }
 }

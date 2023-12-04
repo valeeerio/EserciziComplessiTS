@@ -22,7 +22,7 @@ var Personaggio = /** @class */ (function () {
         var saggezza = statistiche();
         var carisma = statistiche();
         var puntiFerita = Math.floor(10 + (costituzione - 10) / 2);
-        console.log("Ciao sono ".concat(this.nome, " e sono il ").concat(this.id, " personaggio, e queste sono le mie caratteristiche: \nForza: ").concat(forza, " \nDestrezza: ").concat(destrezza, " \nCostituzione: ").concat(costituzione, " \nIntelligenza: ").concat(intelligenza, " \nSaggezza: ").concat(saggezza, " \nCarisma: ").concat(carisma, " \nI miei punti ferita sono ").concat(puntiFerita));
+        console.log("Personaggio ".concat(this.id, ": ").concat(this.nome, " \n      \nForza: ").concat(forza, " \nDestrezza: ").concat(destrezza, " \nCostituzione: ").concat(costituzione, " \nIntelligenza: ").concat(intelligenza, " \nSaggezza: ").concat(saggezza, " \nCarisma: ").concat(carisma, " \nPunti ferita: ").concat(puntiFerita));
     };
     return Personaggio;
 }());
